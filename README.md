@@ -21,7 +21,7 @@ To simulate rendezvous, flocking, and cyclic pursuit behaviors.
 4. Agents are modeled as unicycles -- they can turn and move without complicated dynamics.
 5. Graphs, connecting agents, are established beforehand without consensus.
 
-When executing the simulations I needed to exercise centralized, top-down control over the agents applying these assumptions. In the case of a physical system, these assumptions would need to be implemented in hardware. Even still, some amount of centralized control for system overhead and communications may be necessary to be practical.
+When executing the simulations I needed to exercise centralized, top-down control over the agents to apply these assumptions. In the case of a physical system, these assumptions would need to be implemented in hardware. Even still, some amount of centralized control for the system overhead and communications may be necessary for the sake of experimentation.
 
 # Results
 

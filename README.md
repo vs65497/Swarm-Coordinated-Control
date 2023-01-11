@@ -3,16 +3,18 @@ _Jorge Cortés &amp; Magnus Egerstedt_ - https://www.researchgate.net/publicatio
 
 Von Simmons, Fall 2022
 
+# Background
 Professor Egerstedt asked me to read this paper and simulate a few sections to gain a better understanding of the concepts. To my surprise, simulating the paper revealed some interesting points that I didn't expect. Just as context, swarms are collections of robots in which each robot, or "agent", runs on simple rules. There is not an overseer, instead each agent interacts with its neighbors. These local interactions then produce collective actions, known as emergent behaviors.
 
 At least this is the case in theory. I found that in order to control the swarm in a simulation I needed to make several assumptions -- some which run counter to the premis of swarm robotics.
 
-Goal: To simulate rendezvous, flocking, and cyclic pursuit behaviors.
+# Goals
+To simulate rendezvous, flocking, and cyclic pursuit behaviors.
 - Rendezvous: All agents in the swarm converge to a single point in the center of the swarm. This is all without knowing where the entire swarm or the center of it lies.
 - Flocking: All agents move in a collective direction. They come to consensus on the direction without external guidance.
 - Cyclic Pursuit: Each agent moves towards its next neighbor (this requires an ordered cycle graph) with some offset angle.
 
-Assumptions:
+# Assumptions
 1. Onboard sensors can detect relative distance between agents.
 2. Agents have access to bidirectional, peer-to-peer communication.
 3. Detection range is software limited because the range of wifi and bluetooth makes testing impractical.

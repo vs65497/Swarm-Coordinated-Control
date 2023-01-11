@@ -19,7 +19,7 @@ To simulate rendezvous, flocking, and cyclic pursuit behaviors.
 2. Agents have access to bidirectional, peer-to-peer communication.
 3. Detection range is software limited because the range of wifi and bluetooth makes testing impractical.
 4. Agents are modeled as unicycles -- they can turn and move without complicated dynamics.
-5. Graphs are established beforehand without consensus.
+5. Graphs, connecting agents, are established beforehand without consensus.
 
 When executing the simulations I needed to exercise centralized, top-down control over the agents applying these assumptions. In the case of a physical system, these assumptions would need to be implemented in hardware. Even still, some amount of centralized control for system overhead and communications may be necessary to be practical.
 

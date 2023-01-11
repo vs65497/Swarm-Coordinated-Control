@@ -6,7 +6,7 @@ Von Simmons, Fall 2022
 # Background
 Professor Egerstedt asked me to read this paper and simulate a few sections to gain a better understanding of the concepts. To my surprise, simulating the paper revealed some interesting points that I didn't expect. Just as context, swarms are collections of robots in which each robot, or "agent", runs on simple rules. There is not an overseer, instead each agent interacts with its neighbors. These local interactions then produce collective actions, known as emergent behaviors.
 
-At least this is the case in theory. I found that in order to control the swarm in a simulation I needed to make several assumptions -- some which run counter to the premis of swarm robotics.
+At least this is the case in theory. I found that in order to control the swarm in a simulation I needed to make several assumptions -- some which run counter to the premise of swarm robotics.
 
 # Goals
 To simulate rendezvous, flocking, and cyclic pursuit behaviors.
@@ -18,8 +18,10 @@ To simulate rendezvous, flocking, and cyclic pursuit behaviors.
 1. Onboard sensors can detect relative distance between agents.
 2. Agents have access to bidirectional, peer-to-peer communication.
 3. Detection range is software limited because the range of wifi and bluetooth makes testing impractical.
-4. Agents move as particles. They can change velocity instantaneously if necessary.
+4. Agents are modeled as unicycles -- they can turn and move without complicated dynamics.
 5. Graphs are established beforehand without consensus.
+
+When executing the simulations I needed to exercise centralized, top-down control over the agents applying these assumptions. In the case of a physical system, these assumptions would need to be implemented in hardware. Even still, some amount of centralized control for system overhead and communications may be necessary to be practical.
 
 # Results
 
@@ -44,4 +46,8 @@ _Please note_: `x` is the position vector, `phi` is the heading vector, `R` is t
 _Converge_: `phi > pi / N` | _Unity_: `phi = pi / N` | _Diverge_: `phi < pi / N`
 --- | --- | ---
 <img src="https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/results/cyclic_converge.png" width=300 /> | <img src="https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/results/cyclic_unity.png" width=300 /> | <img src="https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/results/cyclic_diverge.png" width=300 />
+
+# Conclusion
+
+Aside from the assumptions made to execute these concepts as simulations I also found that mathematics for individual agents does not necessarily reflect the reality of implementation. Mathematics serves as a tool to describe these concepts, but they do not express the entire situation. This was especially true when implementing agents as the unicycle model. Some of my earlier attempts led to behaviors that seemed very close to correct but didn't quite reach the mark. Because of this I learned that attempting to reproduce concepts leads to a much deeper understanding than simply reading. A lesson I'll take forward.
 

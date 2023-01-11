@@ -10,7 +10,7 @@ Just as context, swarms are collections of robots in which each "agent" runs on 
 
 # Goals
 To simulate rendezvous, flocking, and cyclic pursuit behaviors.
-- [**Rendezvous**](https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/README.md#rendezvous): All agents in the swarm converge to a single point in the center of the swarm. This is all without knowing where the entire swarm or the center of it lies.
+- [**Rendezvous**](https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/README.md#rendezvous): All agents in the swarm converge to a single point in the center of the swarm. This is all without knowing where the entire swarm resides or the center of it lies.
 - [**Flocking**](https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/README.md#flocking): All agents move in a collective direction. They come to consensus on the direction without external guidance.
 - [**Cyclic Pursuit**](https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/README.md#cyclic-pursuit): Each agent moves towards its next neighbor (this requires an ordered cycle graph) with some offset angle.
 

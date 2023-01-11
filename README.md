@@ -21,4 +21,16 @@ To simulate rendezvous, flocking, and cyclic pursuit behaviors.
 4. Agents move as particles. They can change velocity instantaneously if necessary.
 5. Graphs are established beforehand without consensus.
 
+# Results
+
+Please note: `x` is the position vector, `phi` is the heading vector, `R` is the R^2 rotation matrix, `L` is the Laplacian Graph (L = Degree Matrix - Adjacency Matrix) 
+
+## Rendezvous
+`x_dot = (-L * x)`
+
+## Flocking
+`phi_dot = (-L * phi)`
+
+## Cyclic Pursuit
+`x_dot = R(-phi)*(x[i+1] - x[i])`, `i = 1,...,N-1`
 

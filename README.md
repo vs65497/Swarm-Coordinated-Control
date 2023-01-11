@@ -27,6 +27,8 @@ When executing the simulations I needed to exercise centralized, top-down contro
 
 _Please note_: `x` is the position vector, `phi` is the heading vector, `R` is the R^2 rotation matrix, `N` is the number of agents, `L` is the Laplacian Graph (L = Degree Matrix - Adjacency Matrix) 
 
+Laplacian Graph: https://en.wikipedia.org/wiki/Laplacian_matrix
+
 ## Rendezvous
 **Equation**: `x_dot = (-L * x)`
 <br />**Code**: https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/rendezvous.py

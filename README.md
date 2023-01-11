@@ -51,5 +51,5 @@ _Converge_: `phi > pi / N` | _Unity_: `phi = pi / N` | _Diverge_: `phi < pi / N`
 
 # Conclusion
 
-Aside from the assumptions made to execute these concepts as simulations I also found that mathematics for individual agents does not necessarily reflect the reality of implementation. Mathematics serves as a tool to describe these concepts, but they do not express the entire situation. This was especially true when implementing agents as the unicycle model. Some of my earlier attempts led to behaviors that seemed very close to correct but didn't quite reach the mark. Because of this I learned that attempting to reproduce concepts leads to a much deeper understanding than simply reading. A lesson I'll take forward.
+Aside from the assumptions made to execute these simulations, I also found that mathematics for individual agents does not necessarily reflect the reality of implementation. Mathematics serves as a tool to describe concepts, but it does not express the entire situation. This was especially true when implementing agents as the unicycle model. Some of my earlier attempts led to behaviors that seemed very close to correct but didn't quite hit the mark. Because of this I learned that attempting to reproduce concepts leads to a much deeper understanding than simply reading. This is a lesson I'll take forward.
 

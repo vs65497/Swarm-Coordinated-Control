@@ -6,7 +6,7 @@ Von Simmons, Fall 2022
 # Background
 Professor Egerstedt asked me to read "Coordinated Control of Multi-Robot Systems: A Survey" and simulate a few sections to gain a better understanding of the concepts. To my surprise, simulating the paper revealed some interesting points that I didn't expect. 
 
-Just as context, swarms are collections of robots in which each robot, or "agent", runs on simple rules. There is not an overseer, instead each agent interacts with its neighbors. These local interactions then produce collective actions, known as emergent behaviors. At least this is the case in theory. I found that in order to control the swarm in a simulation I needed to make several assumptions.
+Just as context, swarms are collections of robots in which each robot, or "agent", runs on simple rules. There is no overseer, instead each agent interacts with its neighbors. These local interactions then produce collective actions, known as emergent behaviors. At least this is the case in theory. I found that in order to control the swarm in a simulation I needed to make several assumptions.
 
 # Goals
 To simulate rendezvous, flocking, and cyclic pursuit behaviors.

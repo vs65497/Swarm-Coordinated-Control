@@ -23,14 +23,31 @@ To simulate rendezvous, flocking, and cyclic pursuit behaviors.
 
 # Results
 
-Please note: `x` is the position vector, `phi` is the heading vector, `R` is the R^2 rotation matrix, `L` is the Laplacian Graph (L = Degree Matrix - Adjacency Matrix) 
+Please note: `x` is the position vector, `phi` is the heading vector, `R` is the R^2 rotation matrix, `N` is the number of agents, `L` is the Laplacian Graph (L = Degree Matrix - Adjacency Matrix) 
 
 ## Rendezvous
 `x_dot = (-L * x)`
+Code: https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/rendezvous.py
+<img src="" />
 
 ## Flocking
 `phi_dot = (-L * phi)`
+Code: https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/flocking.py
+<img src="https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/results/Screenshot%202022-10-24%20224551.png" />
 
 ## Cyclic Pursuit
 `x_dot = R(-phi)*(x[i+1] - x[i])`, `i = 1,...,N-1`
+Code: https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/pursuit.py
+
+### Converge
+`phi > pi / N`
+<img src="https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/results/cyclic_converge.png" />
+
+### Unity
+`phi = pi / N`
+<img src="https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/results/cyclic_unity.png" />
+
+### Diverge
+`phi < pi / N`
+<img src="https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/results/cyclic_diverge.png" />
 

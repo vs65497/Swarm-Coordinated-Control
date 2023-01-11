@@ -28,26 +28,26 @@ Please note: `x` is the position vector, `phi` is the heading vector, `R` is the
 ## Rendezvous
 `x_dot = (-L * x)`
 Code: https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/rendezvous.py
-<img src="" />
+<br /><img src="https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/results/rendezvous.png" width=300 />
 
 ## Flocking
 `phi_dot = (-L * phi)`
 Code: https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/flocking.py
-<img src="https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/results/Screenshot%202022-10-24%20224551.png" />
+<br /><img src="https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/results/Screenshot%202022-10-24%20224551.png" width=300 />
 
 ## Cyclic Pursuit
 `x_dot = R(-phi)*(x[i+1] - x[i])`, `i = 1,...,N-1`
-Code: https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/pursuit.py
+<br />Code: https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/pursuit.py
 
 ### Converge
 `phi > pi / N`
-<img src="https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/results/cyclic_converge.png" />
+<br /><img src="https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/results/cyclic_converge.png" width=300 />
 
 ### Unity
 `phi = pi / N`
-<img src="https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/results/cyclic_unity.png" />
+<br /><img src="https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/results/cyclic_unity.png" width=300 />
 
 ### Diverge
 `phi < pi / N`
-<img src="https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/results/cyclic_diverge.png" />
+<br /><img src="https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/results/cyclic_diverge.png" width=300 />
 

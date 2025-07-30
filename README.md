@@ -49,7 +49,7 @@ _Converge_: `phi > pi / N` | _Unity_: `phi = pi / N` | _Diverge_: `phi < pi / N`
 --- | --- | ---
 <img src="https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/results/cyclic_converge.png" width=300 /> | <img src="https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/results/cyclic_unity.png" width=300 /> | <img src="https://github.com/zanzivyr/Swarm-Coordinated-Control/blob/main/results/cyclic_diverge.png" width=300 />
 
-# Conclusion
+# Discussion
 
-Aside from the assumptions made to execute these simulations, I also found that mathematics for individual agents does not necessarily reflect the reality of implementation. Mathematics serves as a tool to describe concepts, but it does not express the entire situation. This was especially true when implementing agents as the unicycle model. Some of my earlier attempts led to behaviors that seemed very close to correct but didn't quite hit the mark. Because of this I learned that attempting to reproduce concepts leads to a much deeper understanding than simply reading. This is a lesson I'll take forward.
+Seemingly small assumptions can lead to large differences in expected versus actual performance. This was especially true when implementing agents as the unicycle model, as some of my earlier attempts led to behaviors that seemed very close to correct but didn't quite hit the mark. I learned that mathematics can be used to model behaviors and phenomena, but simulation only works when you have verified that your model correctly predicts truth. I also learned that attempting to reproduce concepts leads to a much deeper understanding than simply reading. These are lessons I'll take forward.
 
